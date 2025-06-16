@@ -16,39 +16,39 @@ Check off each topic as you go ✅
 - [ ] Complete Git & GitHub Course
 
 ## 📂 2. Programming Fundamentals
-- [ ] Introduction to Programming
-- [ ] Types of Languages
-- [ ] Memory Management
-- [ ] Flow of the Program
-- [ ] Flowcharts
-- [ ] Pseudocode
+- [x] Introduction to Programming
+- [x] Types of Languages
+- [x] Memory Management
+- [x] Flow of the Program
+- [x] Flowcharts
+- [x] Pseudocode
 
 ## 📂 3. Java Basics
-- [ ] Introduction to Java
-- [ ] How it Works
-- [ ] Setup Installation
-- [ ] Input and Output in Java
+- [x] Introduction to Java
+- [x] How it Works
+- [x] Setup Installation
+- [x] Input and Output in Java
 
 ## 📂 4. Conditionals & Loops
-- [ ] if-else
-- [ ] loops
-- [ ] Switch Statements
-- [ ] Data-types
-- [ ] Coding Best Practices
+- [x] if-else
+- [x] loops
+- [x] Switch Statements
+- [x] Data-types
+- [x] Coding Best Practices
 
 ## 📂 5. Functions in Java
-- [ ] Introduction
-- [ ] Scoping
-- [ ] Shadowing
-- [ ] Variable Length Arguments
-- [ ] Overloading
+- [x] Introduction
+- [x] Scoping
+- [x] Shadowing
+- [x] Variable Length Arguments
+- [x] Overloading
 
 ## 📂 6. Arrays
-- [ ] Introduction
-- [ ] Memory Management
-- [ ] Input and Output
-- [ ] ArrayList Introduction
-- [ ] Linear Search
+- [x] Introduction
+- [x] Memory Management
+- [x] Input and Output
+- [x] ArrayList Introduction
+- [x] Linear Search
 - [ ] Binary Search
 - [ ] Modified Binary Search
 - [ ] Binary Search on 2D Arrays
@@ -191,7 +191,7 @@ Check off each topic as you go ✅
 ## 📂 20. Subarray Techniques
 - [ ] Sliding Window
 - [ ] Two Pointer
-- [ ] Kadane's Algorithm
+- [x] Kadane's Algorithm
 
 ## 📂 21. Graphs
 - [ ] Graph Basics
