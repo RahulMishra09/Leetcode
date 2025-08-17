@@ -1,5 +1,10 @@
 class Solution {
     public int arrangeCoins(int n) {
-        return (int)((Math.sqrt(8L * n + 1) - 1) / 2);
+        int numOfBlock = 0;
+       for (int i = 1; i <= n; i++) {
+            numOfBlock = i;
+            n = n -  numOfBlock;
+       }
+       return numOfBlock;
     }
 }
