@@ -1,19 +1,14 @@
 class Solution {
     public int[] getNoZeroIntegers(int n) {
-        for (int a = 1; a < n; a++) {
-            int b = n - a;
-            if (a + b == n && isNoZero(a) && isNoZero(b)) {
-                return new int[]{a, b};
-            }
-        }
-        return new int[]{};
-    }
+        int a = n - 1;
+        int b = 1;
 
-    private boolean isNoZero(int num) {
-        while (num > 0) {
-            if (num % 10 == 0) return false;
-            num /= 10;
+        
+        while (String.valueOf(a).contains("0") || String.valueOf(b).contains("0")) {
+            a--;
+            b++;
         }
-        return true;
+
+        return new int[]{a, b};
     }
 }
