@@ -1,17 +1,18 @@
 class Solution {
     public int differenceOfSums(int n, int m) {
-        int nums1=0;
-        int nums2=0;
-        for(int i=1;i<=n;i++){
-            if(i%m == 0){
-                nums2+=i;
-            }else{
-                nums1+=i;
-            }
+        // total sum of 1..n
+        long totalSum = (long) n * (n + 1) / 2;
 
-        }
-        int result=nums1-nums2;
-        return result;
+        // count of multiples of m up to n
+        long countMultiples = n / m;
 
+        // sum of multiples of m: m * (1 + 2 + ... + countMultiples)
+        long sumMultiples = m * countMultiples * (countMultiples + 1L) / 2;
+
+        // result = (not divisible sum) - (divisible sum)
+        // = totalSum - 2 * sumMultiples
+        long result = totalSum - 2 * sumMultiples;
+
+        return (int) result;
     }
 }
