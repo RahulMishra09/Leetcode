@@ -2,12 +2,19 @@ import java.util.*;
 
 class Solution {
     public int singleNumber(int[] nums) {
-        Arrays.sort(nums);
-        for (int i = 0; i < nums.length - 1; i += 2) {
-            if (nums[i] != nums[i + 1]) {
-                return nums[i];
+        
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int num : nums) {
+            map.put(num, map.getOrDefault(num, 0) + 1);
+        }
+
+        
+        for (int key : map.keySet()) {
+            if (map.get(key) == 1) {
+                return key;
             }
         }
-        return nums[nums.length - 1];
+
+        return -1; 
     }
 }
