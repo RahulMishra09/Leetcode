@@ -4,23 +4,24 @@ class Solution {
             return x;
         }
 
-        long start = 1;
-        long end = x;
-        long ans = -1;
+        int ans = -1;           
+        int left = 0;
+        int right = x;
 
-        while (start <= end) {
-            long mid = start + (end - start) / 2;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
 
-            if (mid * mid == x) {
-                return (int)mid; // Exact sqrt found
-            } else if (mid * mid < x) {
-                ans = mid;        // Potential answer
-                start = mid + 1;
+            long square = (long) mid * mid;  
+
+            if (square == x) {
+                return mid;
+            } else if (square < x) {
+                ans = mid;        
+                left = mid + 1;
             } else {
-                end = mid - 1;
+                right = mid - 1;
             }
         }
-
-        return (int)ans; // Closest integer sqrt
+        return ans;
     }
 }
